@@ -31,20 +31,22 @@ $(function(){
 
     // 输入手机号格式
     $('#y_mobile').keyup(function() {
-
+        // this.value = this.value.replace(/\s/ig,'');
         var mob_len = this.value.length;
         if(event.keyCode == 8 || event.keyCode == 46){
 
         }else{
             if (mob_len == 3 || mob_len == 8) {
-                this.value += " ";
+                // this.value += " ";
             }
         }
+        console.log(this.value);
     });
 
     $("#y_mobile").change(function(){
         var y_mobile= $.trim($("#y_mobile").val());
         y_mobile = y_mobile.replace(/\s/ig,'');  //去掉所有空格
+        // console.log(y_mobile+"---888");
         test_mobile = /^1[34578]\d{9}$/; 
         if(!test_mobile.test(y_mobile)){//手机号格式不正确
             // alert("手机号格式不正确");
@@ -52,6 +54,7 @@ $(function(){
             $("#y_mobile").addClass('er').focus();
             return false;
         }
+
     });
 
 
