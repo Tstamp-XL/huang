@@ -55,14 +55,14 @@
 
 		<a name="tab" hidden></a>
 		<div class="form">
-			<form action="" method="post">
+			<form action="" method="post" id="submit">
 				<label class="label">
 					<span>姓名</span>
 					<input placeholder="请输入您的姓名" type="text" name="">
 				</label>
 				<label>
 					<span>电话</span>
-					<input placeholder="请输入您的电话号码" type="text" name="">
+					<input id="y_mobile" placeholder="请输入您的电话号码" type="text" name="">
 				</label>
 				<label>
 					<span>省份</span>
@@ -92,7 +92,8 @@
 					<!-- <textarea rows="4"></textarea> -->
 					<input placeholder="请输入您的详细地址" type="text" name="">
 				</label>
-				<a href="#tab">立即预约　享免费服务</a>
+				<input class="btn" type="submit" name="" value="立即预约　享免费服务">
+				<!-- <a href="javascript:document:submit.submit();">立即预约　享免费服务</a> -->
 			</form>
 		</div>
 	</div>

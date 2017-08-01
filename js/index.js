@@ -28,10 +28,10 @@ $(function(){
             }, speed);
         });
     }
-})
 
-// 输入手机号格式
+    // 输入手机号格式
     $('#y_mobile').keyup(function() {
+
         var mob_len = this.value.length;
         if(event.keyCode == 8 || event.keyCode == 46){
 
@@ -53,3 +53,5 @@ $(function(){
             return false;
         }
     });
+})
+
