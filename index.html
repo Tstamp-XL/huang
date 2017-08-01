@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=750, user-scalable=no" />
+	<title>Document</title>
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+	<!-- 皇派门窗banner -->
+	<header id="header">
+		<h1>皇派门窗</h1>
+	</header>
+	
+	<!-- 在线预约 -->
+	<div id="booking">
+		<header class="img"><img src="images/title1.png"></header>
+		<div>
+			<nav>
+				<div><img src="images/vip_1.png"><span>免费量尺</span></div>
+				<div><img src="images/vip_2.png"><span>免费设计</span></div>
+				<div><img src="images/vip_3.png"><span>5年质保</span></div>
+			</nav>
+		</div>
+	</div>
+
+	<!-- 预约成功 table -->
+	<div id="table" class="table">
+		<div class="clearfix">
+			<p>已有<span class="co sp">198</span>位成功预约</p>
+		</div>
+		<div class="di">
+			<ul>
+				<li><p>吴先生 137****9843已预约</p></li>
+				<li><p>黄女士 186****4565已预约</p></li>
+				<li><p>刘先生 135****4382已预约</p></li>
+				<li><p>林先生 137****2156已预约</p></li>
+				<li><p>龚先生 137****3265已预约</p></li>
+				<li><p>区女士 137****6542已预约</p></li>
+				<li><p>邓先生 137****9001已预约</p></li>
+				<li><p>邓先生 137****9001已预约</p></li>
+				<li><p>邓先生 137****9001已预约</p></li>
+				<li><p>邓先生 137****9001已预约</p></li>
+			</ul>
+		</div>
+
+		<div class="time clearfix">
+			<span>距离活动结束仅剩</span><p id="time"></p>
+		</div>
+
+		<a name="tab" hidden></a>
+		<div class="form">
+			<form action="" method="post">
+				<label class="label">
+					<span>姓名</span>
+					<input placeholder="请输入您的姓名" type="text" name="">
+				</label>
+				<label>
+					<span>电话</span>
+					<input placeholder="请输入您的电话号码" type="text" name="">
+				</label>
+				<label>
+					<span>省份</span>
+					<select>
+				   		<option value="">请选择省份</option>
+				   		<option value="">广东省</option>
+				   		<option value="">北京</option>
+				   		<option value="">湖北省</option>
+				   		<option value="">河北省</option>
+				   		<option value="">上海</option>
+				   		<option value="">四川省</option>
+				    </select>
+				</label>
+				<label>
+					<span>城市</span>
+					<select id="city">
+				   		<option value="">请选择城市</option>
+				   		<option value="">广州</option>
+				   		<option value="">佛山</option>
+				   		<option value="">北京</option>
+				   		<option value="">湖北xxx</option>
+				   		<option value="">河北xxx</option>
+				    </select>
+				</label>
+				<label valign="top">
+					<span>地址</span>
+					<!-- <textarea rows="4"></textarea> -->
+					<input placeholder="请输入您的详细地址" type="text" name="">
+				</label>
+				<a href="#tab">立即预约　享免费服务</a>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(function(){
+		$(".table .di").myScroll({
+			speed: 40,      // 数值越大 速度越慢
+			rowHeight: 220  // li的高度
+		})
+	})
+	</script>
+
+
+
+	<!-- 三重豪礼连连送 -->
+	<div id="gift">
+		<header class="img"><img src="images/title2.png"></header>
+		<section class="s1">
+			<nav><img src="images/title2_1.png"><span>活动期间进店即送精美礼品一份</span></nav>
+			<div><img src="images/giff.png"><a href="#tab"><img src="images/s1.png"></a></div>
+		</section>
+		<section class="s2">
+			<nav><img src="images/title2_2.png"><span>活动期间，单个订单正价商品</span></nav>
+			<div>
+				<img class="i" src="images/discount_1500.png">
+				<img class="i i1 " src="images/discount_1500.png">
+				<img class="i" src="images/discount_1500.png">
+				<img class="i i1" src="images/discount_1500.png">
+				<a class="as2" href="#tab"><img src="images/s2.png"></a></div>
+		</section>
+		<section class="s3">
+			<nav><img src="images/title2_3.png"></nav>
+			<div class="s3div1">
+				<img class="" src="images/pro_2.png">
+				<span>英伦格调二轨推拉窗</span>
+				<a href="">立即预订</a>
+			</div>
+			<div class="s3div2">
+				<img class="" src="images/pro_2.png">
+				<span>巴黎时尚单体平开窗</span>
+				<a href="">立即预订</a>
+			</div>
+		</section>
+	</div>
+
+	<!-- 更多活动 -->
+	<div id="activity">
+		<header><img src="images/title3.png"></header>
+		<nav class="ac1">
+			<img class="ac1img" src="images/title3_1.png">
+			<div>
+				<img src="images/pro_3.png">
+				<img src="images/pro_4.png">
+				<span>皇爵端隔热平开窗</span>
+				<a href="">立即预订</a>
+			</div>
+		</nav>
+
+
+
+		<nav class="ac2">
+			<img class="ac1img" src="images/title3_2.png">
+			<div>
+				<img src="images/yinglun.png">
+				<img src="images/yinglun.png">
+				<span>英伦格调室外二轨推拉门</span>
+				<a href="">立即预订</a>
+			</div>
+		</nav>
+
+
+		<nav class="ac3">
+			<img class="ac1img" src="images/title3_3.png">
+			<div>
+				<img src="images/pro_7.png">
+				<img src="images/pro_8.png">
+				<img src="images/pro_9.png">
+				<span>宝国饰家系列</span>
+				<a href="">立即预订</a>
+			</div>
+		</nav>
+	
+
+
+		<div id="power">
+			<header><img src="images/title4.png"></header>
+			<div class="p1">
+				<img src="images/h1.png" alt="">
+				<img src="images/h11.png" alt="">
+			</div>
+
+			<div class="p2">
+				<img src="images/h22.png">
+				<img src="images/h2.png">
+			</div>
+
+			<div class="p3">
+				<img src="images/h3.png" alt="">
+					<img valign="top" src="images/h4.png" alt="">
+					<img valign="top" src="images/h5.png" alt="">
+					<img src="images/h33.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="last">
+		<a href="">咨询热线</a>
+		<a href="#tab">立即预约</a>
+	</div>
+
+
+	<!-- 皇派实力 -->
+	
+
+
+</body>
+</html>
